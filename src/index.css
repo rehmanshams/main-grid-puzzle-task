@@ -1,5 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,89 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.hello {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    white 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, white 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 1000ms ease-in-out;
+}
+.hello:hover {
+  background-position: 0;
+}
+.fourth {
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #2196F3 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, #2196F3 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 1000ms ease-in-out;
+}
+.fourth:hover {
+  background-position: 0;
+}
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1;
+
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+@font-face {
+  font-family: Koh Santepheap;
+  src: url(../public/Koh_Santepheap/KohSantepheap-Bold.ttf);
+}
+@font-face {
+  font-family: Koh;
+  src: url(../public/Koh_Santepheap/KohSantepheap-Regular.ttf);
+}
+@font-face {
+  font-family: kohh;
+  src: url(../public/Koh_Santepheap/KohSantepheap-Light.ttf);
+}
+.fiveth {
+  border-color: black;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #030303 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, #030303 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 800ms ease-in-out;
+  width: 96px;
+}
+.fiveth:hover {
+  background-position: 0;
 }
