@@ -30,9 +30,9 @@ export const mainpage = () => {
           </div>
           <div className="flex justify-center">
             <Link to="/taskone">
-            <button className="flex py-[10px] my-[10px] self-end justify-center text-center text-sm font-semibold text-blue-600 leading-[21px] border border-blue-600 rounded-[4px] hover:text-white hover:bg-blue-600 w-[250px]">
-              View Task
-            </button>
+              <button className="flex py-[10px] my-[10px] self-end justify-center text-center text-sm font-semibold text-blue-600 leading-[21px] border border-blue-600 rounded-[4px] hover:text-white hover:bg-blue-600 w-[250px]">
+                View Task
+              </button>
             </Link>
           </div>
         </div>
@@ -48,9 +48,11 @@ export const mainpage = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <button className="flex py-[10px] my-[10px] self-end justify-center text-center text-sm font-semibold text-blue-600 leading-[21px] border border-blue-600 rounded-[4px] hover:text-white hover:bg-blue-600 w-[250px]">
-              View Task
-            </button>
+            <Link to="/tasktwo">
+              <button className="flex py-[10px] my-[10px] self-end justify-center text-center text-sm font-semibold text-blue-600 leading-[21px] border border-blue-600 rounded-[4px] hover:text-white hover:bg-blue-600 w-[250px]">
+                View Task
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-[296px] h-[388px] rounded-xl border-2 border-gray-100">
@@ -65,11 +67,11 @@ export const mainpage = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <a href="">
+            <Link to="taskthree">
               <button className="flex py-[10px] my-[10px] self-end justify-center text-center text-sm font-semibold text-blue-600 leading-[21px] border border-blue-600 rounded-[4px] hover:text-white hover:bg-blue-600 w-[250px]">
                 View Task
               </button>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="w-[296px] h-[388px] rounded-xl border-2 border-gray-100">
@@ -84,9 +86,11 @@ export const mainpage = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <button className="flex py-[10px] my-[10px] self-end justify-center text-center text-sm font-semibold text-blue-600 leading-[21px] border border-blue-600 rounded-[4px] hover:text-white hover:bg-blue-600 w-[250px]">
-              View Task
-            </button>
+            <Link to="/taskfour">
+              <button className="flex py-[10px] my-[10px] self-end justify-center text-center text-sm font-semibold text-blue-600 leading-[21px] border border-blue-600 rounded-[4px] hover:text-white hover:bg-blue-600 w-[250px]">
+                View Task
+              </button>
+            </Link>
           </div>
         </div>
       </div>
