@@ -81,6 +81,18 @@ code {
   font-family: kohh;
   src: url(../public/Koh_Santepheap/KohSantepheap-Light.ttf);
 }
+@font-face {
+  font-family: lato;
+  src: url(../public/Lato/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: lato2;
+  src: url(../public/Lato/Lato-Regular.ttf);
+}
+@font-face{
+  font-family: lato3;
+  src: url(../public/Lato/Lato-Light.ttf);
+}
 .fiveth {
   border-color: black;
   background-image: -webkit-linear-gradient(

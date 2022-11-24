@@ -9,7 +9,10 @@ module.exports = {
       fontFamily: {
         boldone: ["Koh Santepheap"],
         regularone: ["Koh"],
-        lightone : ["kohh"]
+        lightone : ["kohh"],
+        latoboldone : ["lato"],
+        latoregularone : ["lato2"],
+        latolightone : ["lato3"]
       },
     },
   },

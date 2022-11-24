@@ -124,7 +124,7 @@ function Tasktwo() {
                 <button
                   className="border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent "
                   onClick={() => {
-                    window.location.replace("/");
+                    window.location.reload();
                   }}
                 >
                   Reset
@@ -161,7 +161,7 @@ function Tasktwo() {
                 <button
                   className="border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[490px]  md:ml-[600px] ease-in duration-200 lg:ml-[820px] 2xl:ml-[1383px] xl:ml-[1113px] text-blue-600 transition  sm:mt-[-40px]  md:mt-[-41px] lg:mt-[-49px] h-12  xs:w-[300px] xs:ml-3 xs:mt-2 sm:w-24 md:w-32 bg-transparent "
                   onClick={() => {
-                    window.location.replace("/");
+                    window.location.reload();
                   }}
                 >
                   Reset
@@ -171,19 +171,33 @@ function Tasktwo() {
             <div className="w-full flex justify-center"></div>
             <div className="mt-6 flex ease-out duration-300 xs:ml-4 lg:ml-10 md:ml-[88px] sm:ml-7">
               <div className="flex lg:ml-0 md:ml-[-70px] xl:ml-[-20px] gap-2">
-                <img
-                  className="xs:w-3 sm:w-4"
-                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Ellipse%2021.svg"
-                />
+                <svg
+                  className="lg:mt-[6px]"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="8" cy="8" r="8" fill="#FBBF24" />
+                </svg>
+
                 <p className="text-[#525252] font-regularone font-normal sm:text-md  xs:text-[10px] md:text-md lg:text-lg">
                   Prime Number
                 </p>
               </div>
               <div className="flex ml-4 gap-2">
-                <img
-                  className="xs:w-3 sm:w-4"
-                  src="https://tuk-cdn.s3.amazonaws.com/can-uploader/Ellipse%2022.svg"
-                />
+                <svg
+                  className="lg:mt-[6px]"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="8" cy="8" r="8" fill="#34D399" />
+                </svg>
+
                 <p className="font-regularone text-[#525252] font-normal sm:text-md  xs:text-[10px] md:text-md lg:text-lg">
                   Even Number
                 </p>

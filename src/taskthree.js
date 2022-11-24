@@ -113,7 +113,7 @@ export const Taskthree = () => {
               <button
                 className="border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent "
                 onClick={() => {
-                  window.location.replace("/");
+                  window.location.reload();
                 }}
               >
                 Reset

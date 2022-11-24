@@ -59,17 +59,19 @@ function Taskfour() {
                 className="w-10 xs:ml-4 lg:ml-10 sm:ml-7 ease-out duration-300 mt-6"
                 src="https://tuk-cdn.s3.amazonaws.com/can-uploader/istockphoto-1162207323-1024x1024-removebg-preview.png"
               />
-              <p className="sm:mt-[35px] sm:ml-[1px]  lg:ml-1 lg:mt-[30px]  xs:mt-[35px] xs:ml-[1] mt-7 ease-out duration-300 font-regularone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
+              <p className="sm:mt-[35px] sm:ml-[1px]  lg:ml-1 lg:mt-[30px]  xs:mt-[35px] xs:ml-[1] mt-7 ease-out duration-300 font-latoregularone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
                 GO BACK
               </p>
             </div>
-            <p className="font-bold xs:ml-4 lg:ml-10 sm:ml-7 mt-6 ease-out duration-300 font-boldone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
+            <p className="font-bold xs:ml-4 lg:ml-10 sm:ml-7 mt-6 ease-out duration-300 font-latoboldone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
+              <span className= "font-latoboldone" >
               Task:
-              <span className="font-normal">
+              </span>
+              <span className="font-regularone">
                 Enter index to remove/delete box in the given grid.
               </span>{" "}
             </p>
-            <p className="font-thin ease-out duration-300 sm:text-md lg:ml-10 xs:text-[14px] md:text-md font-regularone  lg:text-xl xs:mt-8 sm:mt-5 xs:ml-4 sm:ml-7">
+            <p className="font-thin ease-out duration-300 sm:text-md lg:ml-10 xs:text-[14px] md:text-md font-latoregularone  lg:text-xl xs:mt-8 sm:mt-5 xs:ml-4 sm:ml-7">
               Enter number
             </p>
           </div>
@@ -85,7 +87,7 @@ function Taskfour() {
               {show2 ? (
                 <>
                   <input
-                    className="border-[#9CA3AF] lg:ml-10 font-lightone bg-color-cyan-500 text-black ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
+                    className="border-[#9CA3AF] lg:ml-10 font-latolightone bg-color-cyan-500 text-black ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
                     type="number"
                     placeholder=" Enter number to generate grid "
                     name="inputlength"
@@ -94,30 +96,30 @@ function Taskfour() {
                     min="1"
                     max="200"
                   />
-                  <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-regularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 hover:bg-white text-white font-normal bg-cyan-600">
+                  <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 hover:bg-white text-white font-normal bg-cyan-600">
                     Submit
                   </button>
                 </>
               ) : (
                 <>
                   <input
-                    className="border-[#9CA3AF] lg:ml-10 font-lightone bg-color-cyan-500 text-black ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
+                    className="border-[#9CA3AF] lg:ml-10 font-latolightone bg-color-cyan-500 text-black ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
                     type="number"
                     placeholder=" Enter value to remove the number "
                     required
                     min="1"
                     max="200"
                   />
-                  <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-regularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 hover:bg-white text-white font-normal bg-cyan-600">
+                  <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 hover:bg-white text-white font-normal bg-cyan-600">
                     Submit{" "}
                   </button>
                 </>
               )}
               {show && (
                 <button
-                  className="border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent "
+                  className="border-blue-600 rounded-[4px] fourth font-latoregularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent "
                   onClick={() => {
-                    window.location.replace("/");
+                    window.location.reload();
                   }}
                 >
                   Reset
@@ -137,7 +139,7 @@ function Taskfour() {
                     }}
                     className={`w-[${gridsize * 2}px] h-[${
                       gridsize * 2
-                    }px] pr-4 pb-6 w-full flex-wrap xs:w-[300px] sm:w-[580px] ease-out duration-300 rounded-3xl md:w-[730px] lg:w-[950px] 2xl:w-[1500px] xl:w-[1250px]  h-full  transition  xs:gap-0 md:gap-4 place-items-center border-b-0 border-r-0 border-t-0 border-l-0 mb-10 `}
+                    }px] pr-4 pb-6 w-full flex-wrap bg-green-500 xs:w-[300px] sm:w-[580px] ease-out duration-300 rounded-3xl md:w-[730px] lg:w-[950px] 2xl:w-[1500px] xl:w-[1250px]  h-full  transition  xs:gap-0 md:gap-4 place-items-center border-b-0 border-r-0 border-t-0 border-l-0 mb-10 `}
                   >
                     {size.map((_number, idx) => {
                       return (
