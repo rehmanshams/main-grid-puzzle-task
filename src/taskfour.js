@@ -51,7 +51,7 @@ function Taskfour() {
           </div>
           <div className="mt-16 md:ml-[-10px] lg:ml-0 xl:ml-[-20px]">
             <div
-              className="flex cursor-pointer"
+              className="flex w-44 cursor-pointer"
               onClick={() => {
                 window.location.replace("/");
               }}
@@ -75,6 +75,65 @@ function Taskfour() {
             </p>
           </div>
           <div>
+          <form
+              className="sm:hidden xs:block md:ml-[-70px] flex lg:ml-0 xl:ml-[-20px]"
+              onSubmit={(event) => {
+                show2
+                  ? createHandler(event, true)
+                  : createHandler(event, false);
+              }}
+            >
+              {show2 ? (
+                <>
+                  <input
+                className="border-[#9CA3AF] lg:ml-10 font-latolightone  ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
+                type="number"
+                placeholder=" Enter number to generate grid "
+                name="inputlength"
+                id="inputlength"
+                required
+                    min="1"
+                    max="200"
+                  />
+                  <button 
+                className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 text-white font-normal bg-cyan-600">
+                Submit
+                  </button>
+                </>
+              ) : (
+                <>
+                  <input
+                className="border-[#9CA3AF] lg:ml-10 font-latolightone  ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
+                type="number"
+                placeholder=" Enter number to generate grid "
+                name="inputlength"
+                id="inputlength"
+                required
+                    min="1"
+                    max="200"
+                  />
+                  <button 
+                className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 text-white font-normal bg-cyan-600"
+              >  Submit{" "}
+                  </button>
+                </>
+              )}
+              {show && (
+                <button
+                  className={`${
+                    (show2 &&
+                      "bg-white border-[1px] text-cyan-600 border-cyan-600") ||
+                    "border-green-500 border-[1px] hover:text-white text-green-500"
+                  }
+                   rounded-[4px] fourth font-latoregularone xs:ml-3 xs:mt-2 border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px]  transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent `}
+                  onClick={() => {
+                    window.location.reload();
+                  }}
+                >
+                  Reset
+                </button>
+              )}
+            </form>
             <form
               className="sm:block xs:hidden md:ml-[-70px] flex lg:ml-0 xl:ml-[-20px]"
               onSubmit={(event) => {
@@ -118,7 +177,7 @@ function Taskfour() {
                 <button
                   className={`${
                     (show2 &&
-                      "bg-white border-[1px] text-blue-600 border-blue-600") ||
+                      "bg-white border-[1px] text-cyan-600 border-cyan-600") ||
                     "border-green-500 border-[1px] hover:text-white text-green-500"
                   }
                     rounded-[4px] rest font-latoregularone  border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px]  transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent `}
@@ -137,7 +196,7 @@ function Taskfour() {
                 (show2 && "bg-slate-50 custom-border-before") ||
                 "bg-green-100 custom-border-after"
               } 
-            xs:w-[300px] xs:h-[160px] rounded-3xl ease-out duration-300sm:w-[580px] sm:h-[220px] md:w-[730px] md:h-[270px] lg:w-[950px] lg:h-[270px] xl:w-[1250px] xl:h-[270px] 2xl:w-[1500px] 2xl:h-[290px] pr-4 pb-6 place-items-center custom-border-before mb-10 `}
+            xs:w-[300px] xs:h-[160px] rounded-3xl ease-out duration-300 sm:w-[580px] sm:h-[220px] md:w-[730px] md:h-[270px] lg:w-[950px] lg:h-[270px] xl:w-[1250px] xl:h-[270px] 2xl:w-[1500px] 2xl:h-[290px] pr-4 pb-6 place-items-center custom-border-before mb-10 `}
             >
               <div className="w-full h0">
                 {size.length ? (

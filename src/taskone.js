@@ -43,7 +43,7 @@ export const Taskone = () => {
           <div className="mt-16 md:ml-[-10px] lg:ml-0 xl:ml-[-20px]">
             {/* <Link to="https://main-grid-puzzle-task.vercel.app/"> */}
             <div
-              className="flex cursor-pointer"
+              className="flex w-44 cursor-pointer"
               onClick={() => {
                 window.location.replace("/");
               }}

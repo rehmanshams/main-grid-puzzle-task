@@ -75,7 +75,7 @@ function Tasktwo() {
           </div>
           <div className="mt-16 md:ml-[-10px] lg:ml-0 xl:ml-[-20px]">
           <div
-              className="flex cursor-pointer"
+              className="flex w-44 cursor-pointer"
               onClick={() => {
                 window.location.replace("/");
               }}
