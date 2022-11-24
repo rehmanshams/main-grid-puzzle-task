@@ -137,13 +137,12 @@ function Taskfour() {
                     }}
                     className={`w-[${gridsize * 2}px] h-[${
                       gridsize * 2
-                    }px] pr-4 pb-6 w-full flex-wrap xs:w-[300px] sm:w-[580px] bg-green-100 ease-out duration-300 rounded-3xl md:w-[730px] lg:w-[950px] 2xl:w-[1500px] xl:w-[1250px]  h-full  transition  xs:gap-0 md:gap-4 place-items-center border-b-0 border-r-0 border-t-0 border-l-0  border-[#EA580C] border-[1px] bg-[
-                      Slate 50] mb-10 `}
+                    }px] pr-4 pb-6 w-full flex-wrap xs:w-[300px] sm:w-[580px] ease-out duration-300 rounded-3xl md:w-[730px] lg:w-[950px] 2xl:w-[1500px] xl:w-[1250px]  h-full  transition  xs:gap-0 md:gap-4 place-items-center border-b-0 border-r-0 border-t-0 border-l-0 mb-10 `}
                   >
                     {size.map((_number, idx) => {
                       return (
                         <div
-                          className="lg:w-[150px] bg-green-500 2xl:w-[220px] xs:w-[56px] ease-out duration-300 xs:h-[43px] sm:w-[98px] md:w-[115px] xl:w-44 mt-6 sm:h-[75px]   md:h-[85px] lg:h-[90px] transition xs:rounded-md sm:rounded-xl
+                          className="lg:w-[150px]5 2xl:w-[220px] xs:w-[56px] ease-out duration-300 xs:h-[43px] sm:w-[98px] md:w-[115px] xl:w-44 mt-6 sm:h-[75px]   md:h-[85px] lg:h-[90px] transition xs:rounded-md sm:rounded-xl
                        ml-4"
                           key={idx}
                         >
