@@ -29,7 +29,7 @@ const Model = () => {
                   </h1>
                   <button
                     onClick={() => {
-                      window.location.replace("/");
+                      window.location.reload();
                     }}
                     className="border-black xs:w-16 sm:w-24 font-lightone text-black ease-out duration-300 hover:text-white fiveth mt-6 rounded-md bg-transparent cursor border-[1px]"
                   >

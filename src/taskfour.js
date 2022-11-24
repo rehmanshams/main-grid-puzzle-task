@@ -29,9 +29,10 @@ function Taskfour() {
         .map((puzzle_maping) => puzzle_maping.value);
       setsize(array);
     } else if (type == false) {
-      size.splice(input.value, 1);
-      setsize(...size);
+      size.splice(input.value, +1);
+      setsize([...size]);
     }
+
     setshow(true);
     setShow2(false);
     if (show2) {
@@ -64,9 +65,7 @@ function Taskfour() {
               </p>
             </div>
             <p className="font-bold xs:ml-4 lg:ml-10 sm:ml-7 mt-6 ease-out duration-300 font-latoboldone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
-              <span className= "font-latoboldone" >
-              Task:
-              </span>
+              <span className="font-latoboldone">Task:</span>
               <span className="font-regularone">
                 Enter index to remove/delete box in the given grid.
               </span>{" "}
@@ -117,7 +116,12 @@ function Taskfour() {
               )}
               {show && (
                 <button
-                  className="border-blue-600 rounded-[4px] fourth font-latoregularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent "
+                  className={`${
+                    (show2 &&
+                      "bg-white border-[1px] text-blue-600 border-blue-600") ||
+                    "border-green-500 border-[1px] hover:text-white text-green-500"
+                  }
+                    rounded-[4px] rest font-latoregularone  border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px]  transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent `}
                   onClick={() => {
                     window.location.reload();
                   }}
@@ -128,7 +132,13 @@ function Taskfour() {
             </form>
           </div>
           <div className="w-full mt-5 flex justify-center">
-            <div className="xs:w-[300px] xs:h-[160px] rounded-3xl ease-out duration-300 bg-green-100 sm:w-[580px] sm:h-[220px] md:w-[730px] md:h-[270px] lg:w-[950px] lg:h-[270px] xl:w-[1250px] xl:h-[270px] 2xl:w-[1500px] 2xl:h-[290px] pr-4 pb-6 place-items-center border-b-0 border-r-0 border-t-0 border-l-0 border-[#EA580C]  border-[1px] mb-10 ">
+            <div
+              className={` ${
+                (show2 && "bg-slate-50 custom-border-before") ||
+                "bg-green-100 custom-border-after"
+              } 
+            xs:w-[300px] xs:h-[160px] rounded-3xl ease-out duration-300sm:w-[580px] sm:h-[220px] md:w-[730px] md:h-[270px] lg:w-[950px] lg:h-[270px] xl:w-[1250px] xl:h-[270px] 2xl:w-[1500px] 2xl:h-[290px] pr-4 pb-6 place-items-center custom-border-before mb-10 `}
+            >
               <div className="w-full h0">
                 {size.length ? (
                   <div
@@ -139,12 +149,13 @@ function Taskfour() {
                     }}
                     className={`w-[${gridsize * 2}px] h-[${
                       gridsize * 2
-                    }px] pr-4 pb-6 w-full flex-wrap bg-green-500 xs:w-[300px] sm:w-[580px] ease-out duration-300 rounded-3xl md:w-[730px] lg:w-[950px] 2xl:w-[1500px] xl:w-[1250px]  h-full  transition  xs:gap-0 md:gap-4 place-items-center border-b-0 border-r-0 border-t-0 border-l-0 mb-10 `}
+                    }px]  pr-4 pb-6 w-full flex-wrap bg-green-100 xs:w-[300px] sm:w-[580px] ease-out duration-300 custom-border-before rounded-3xl md:w-[730px] lg:w-[950px] 2xl:w-[1500px] xl:w-[1250px]  h-full  transition  xs:gap-0 md:gap-4 place-items-center border-b-0 border-r-0 border-t-0 border-l-0 mb-10
+                    `}
                   >
                     {size.map((_number, idx) => {
                       return (
                         <div
-                          className="lg:w-[150px]5 2xl:w-[220px] xs:w-[56px] ease-out duration-300 xs:h-[43px] sm:w-[98px] md:w-[115px] xl:w-44 mt-6 sm:h-[75px]   md:h-[85px] lg:h-[90px] transition xs:rounded-md sm:rounded-xl
+                          className="lg:w-[158px] 2xl:w-[267px] bg-[#059669] xs:w-[78px] ease-out duration-300 xs:h-[43px] sm:w-[124px] md:w-[150px] xl:w-44 mt-6 sm:h-[75px]   md:h-[85px] lg:h-[90px] transition xs:rounded-md sm:rounded-xl
                        ml-4"
                           key={idx}
                         >
