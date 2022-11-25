@@ -151,8 +151,8 @@ function Taskfour() {
                     name="inputlength"
                     id="inputlength"
                     required
-                    min="1"
-                    max="200"
+                    min="15"
+                    max="150"
                   />
                   <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 hover:bg-white text-white font-normal bg-cyan-600">
                     Submit
@@ -165,8 +165,8 @@ function Taskfour() {
                     type="number"
                     placeholder=" Enter value to remove the number "
                     required
-                    min="1"
-                    max="200"
+                    min="0"
+                    max="150"
                   />
                   <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 hover:bg-white text-white font-normal bg-cyan-600">
                     Submit{" "}

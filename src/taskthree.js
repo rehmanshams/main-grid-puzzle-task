@@ -29,8 +29,9 @@ export const Taskthree = () => {
   };
   // function to get number of the grid
   function gettheNumber(e) {
+   const copy = [...size];
     if (e === "odd") {
-      let filtertheNumbers = size.filter((item) => {
+      let filtertheNumbers = copy.filter((item) => {
         if (item % 2 == 0) {
           return item;
         }
@@ -87,7 +88,7 @@ export const Taskthree = () => {
             </p>
           </div>
           <div>
-          <form
+            <form
               className="sm:hidden xs:block md:ml-[-70px] flex lg:ml-0 xl:ml-[-20px]"
               onSubmit={(onsubmit_handler) => {
                 createHandler(onsubmit_handler);
@@ -114,7 +115,7 @@ export const Taskthree = () => {
               {show && (
                 <button
                   className={`${
-                    setodd &&
+                    odd &&
                     "bg-green-100 border-[1px] text-green-500 border-green-500"
                   }
                 border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent `}
@@ -152,9 +153,7 @@ export const Taskthree = () => {
               </button>
               {show && (
                 <button
-                  className={`${odd(
-                    "bg-green-100 border-[1px] text-green-500 border-green-500")
-                  }
+                  className={`${("bg-green-100 border-[1px] text-green-500 border-green-500")}
                 border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent `}
                   onClick={() => {
                     window.location.reload();
@@ -164,43 +163,6 @@ export const Taskthree = () => {
                 </button>
               )}
             </form>
-            <div className="sm:hidden xs:block">
-              <form
-                className=" md:ml-[-70px] lg:ml-0 xl:ml-[-20px]"
-                onSubmit={(onsubmit_handler) => {
-                  createHandler(onsubmit_handler);
-                }}
-              >
-                <input
-                  className="border-[#9CA3AF] lg:ml-10 font-lightone  ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
-                  type="number"
-                  placeholder=" Enter number to generate grid "
-                  name="inputlength"
-                  id="inputlength"
-                  required
-                  min="2"
-                  max="4"
-                />
-                <button
-                  onClick={() => {
-                    setshow(true);
-                  }}
-                  className="xs:w-[300px] sm:w-24 md:w-32 ease-out duration-300 h-12 font-regularone xs:ml-3 xs:mt-2 sm:mt-0 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-blue-500 hover:border-[1px] hover:border-blue-500 text-white font-normal bg-blue-600"
-                >
-                  Submit
-                </button>
-              </form>
-              {show && (
-                <button
-                  className="border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[490px]  md:ml-[600px] ease-in duration-200 lg:ml-[820px] 2xl:ml-[1383px] xl:ml-[1113px] text-blue-600 transition  sm:mt-[-40px]  md:mt-[-41px] lg:mt-[-49px] h-12  xs:w-[300px] xs:ml-3 xs:mt-2 sm:w-24 md:w-32 bg-transparent "
-                  onClick={() => {
-                    window.location.replace("/");
-                  }}
-                >
-                  Reset
-                </button>
-              )}
-            </div>
             <div className="absolute mt-6 gap-0 flex ease-out duration-300 xs:ml-11 lg:ml-10 md:ml-[88px] sm:ml-7">
               <div className="cursor-pointer font-manregularone hover:font-boldone hover:border-4 border-l-transparent border-r-transparent border-t-transparent border-black w-8 text-center  xl:ml-[-10px] xs:ml-[-32px] sm:ml-2 text-[#525252] hover:font-manboldone  font-normal sm:text-[12px] xs:text-md sm xs:text-[8px] md:text-md lg:text-lg">
                 <p>All</p>
@@ -256,7 +218,7 @@ export const Taskthree = () => {
                 </svg>
 
                 <p
-                  onClick={() => gettheNumber("odd")}
+                  onClick={(setbuttoncolor) => gettheNumber("odd")}
                   className=" text-[#525252] font-regularone hover:font-boldone sm:text-[12px] xs:text-md font-normal sm:text-md  xs:text-[8px] md:text-md lg:text-lg"
                 >
                   Odd Number

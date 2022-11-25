@@ -74,7 +74,7 @@ function Tasktwo() {
             />
           </div>
           <div className="mt-16 md:ml-[-10px] lg:ml-0 xl:ml-[-20px]">
-          <div
+            <div
               className="flex w-44 cursor-pointer"
               onClick={() => {
                 window.location.replace("/");
@@ -234,13 +234,16 @@ function Tasktwo() {
                             (_number > 2 &&
                               _number % 2 !== 0 &&
                               _number % 3 !== 0 &&
+                              _number % 5 !== 0 &&
+                              _number % 7 !== 0 &&
                               "bg-yellow-500") ||
                             ((_number === 2 ||
                               _number === 3 ||
-                              _number === 5) &&
+                              _number === 5 ||
+                              _number === 7) &&
                               "bg-yellow-500") ||
-                            (_number % 2 && "bg-green-500") ||
-                            (_number % 1 != 3 && "bg-blue-500")
+                            (_number % 2 === 0 && "bg-green-500") ||
+                            "bg-blue-500"
                           } ml-4`}
                           key={idx * 1000 * Math.random()}
                           onDragStart={(e) => dragStart(e, idx)}
@@ -249,7 +252,7 @@ function Tasktwo() {
                           draggable
                         >
                           <p className=" text-center font-regularone sm:text-2xl xs:mt-[10px] ease-out duration-300  xs:text-base align-center sm:mt-[20px] md:mt-[26px] text-white">
-                            {_number + 1}
+                            {_number}
                           </p>
                         </div>
                       );
