@@ -29,7 +29,7 @@ export const Taskthree = () => {
   };
   // function to get number of the grid
   function gettheNumber(e) {
-   const copy = [...size];
+    const copy = [...size];
     if (e === "odd") {
       let filtertheNumbers = copy.filter((item) => {
         if (item % 2 == 0) {
@@ -61,12 +61,15 @@ export const Taskthree = () => {
         <div className="w-full mx-auto ease-out duration-300 container inline-block h-full">
           <div className="w-full flex justify-center">
             <img
+              onClick={() => {
+                window.location.replace("/");
+              }}
               className="lg:w-96 ease-out duration-300 xs:w-60 sm:w-72 md:w-80  sm:ml-0 mt-[80px]"
               src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%201.svg"
             />
           </div>
           <div className="mt-16 md:ml-[-10px] lg:ml-0 xl:ml-[-20px]">
-            <div
+            {/* <div
               className="flex w-44 cursor-pointer"
               onClick={() => {
                 window.location.replace("/");
@@ -79,7 +82,7 @@ export const Taskthree = () => {
               <p className="sm:mt-[35px] sm:ml-[1px]  lg:ml-1 lg:mt-[30px]  xs:mt-[35px] xs:ml-[1] mt-7 ease-out duration-300 font-regularone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
                 GO BACK
               </p>
-            </div>
+            </div> */}
             <p className="font-bold xs:ml-4 lg:ml-10 sm:ml-7 mt-6 ease-out duration-300 font-boldone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
               Task: Num detector via color in grid
             </p>
@@ -153,7 +156,7 @@ export const Taskthree = () => {
               </button>
               {show && (
                 <button
-                  className={`${("bg-green-100 border-[1px] text-green-500 border-green-500")}
+                  className={`${"bg-green-100 border-[1px] text-green-500 border-green-500"}
                 border-blue-600 rounded-[4px] fourth font-regularone hover:text-white border-[1px] sm:ml-[90px]   md:ml-[175px] ease-in duration-200 lg:ml-[369px] 2xl:ml-[900px] 2xl:mt-2 md:mt-2 xl:ml-[663px] text-blue-600 transition  sm:mt-2  lg:mt-2 h-12  xs:w-[300px] sm:w-24 md:w-32 bg-transparent `}
                   onClick={() => {
                     window.location.reload();

@@ -45,12 +45,15 @@ function Taskfour() {
         <div className="w-full mx-auto ease-out duration-300 container inline-block h-full">
           <div className="w-full flex justify-center">
             <img
+              onClick={() => {
+                window.location.replace("/");
+              }}
               className="lg:w-96 ease-out duration-300 xs:w-60 sm:w-72 md:w-80  sm:ml-0 mt-[80px]"
               src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%201.svg"
             />
           </div>
           <div className="mt-16 md:ml-[-10px] lg:ml-0 xl:ml-[-20px]">
-            <div
+            {/* <div
               className="flex w-44 cursor-pointer"
               onClick={() => {
                 window.location.replace("/");
@@ -63,7 +66,7 @@ function Taskfour() {
               <p className="sm:mt-[35px] sm:ml-[1px]  lg:ml-1 lg:mt-[30px]  xs:mt-[35px] xs:ml-[1] mt-7 ease-out duration-300 font-latoregularone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
                 GO BACK
               </p>
-            </div>
+            </div> */}
             <p className="font-bold xs:ml-4 lg:ml-10 sm:ml-7 mt-6 ease-out duration-300 font-latoboldone text-[#1F2937 xs:text-sm sm:text-md md:text-md lg:text-xl">
               <span className="font-latoboldone">Task:</span>
               <span className="font-regularone">
@@ -75,7 +78,7 @@ function Taskfour() {
             </p>
           </div>
           <div>
-          <form
+            <form
               className="sm:hidden xs:block md:ml-[-70px] flex lg:ml-0 xl:ml-[-20px]"
               onSubmit={(event) => {
                 show2
@@ -86,35 +89,34 @@ function Taskfour() {
               {show2 ? (
                 <>
                   <input
-                className="border-[#9CA3AF] lg:ml-10 font-latolightone  ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
-                type="number"
-                placeholder=" Enter number to generate grid "
-                name="inputlength"
-                id="inputlength"
-                required
+                    className="border-[#9CA3AF] lg:ml-10 font-latolightone  ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
+                    type="number"
+                    placeholder=" Enter number to generate grid "
+                    name="inputlength"
+                    id="inputlength"
+                    required
                     min="1"
                     max="200"
                   />
-                  <button 
-                className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 text-white font-normal bg-cyan-600">
-                Submit
+                  <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 text-white font-normal bg-cyan-600">
+                    Submit
                   </button>
                 </>
               ) : (
                 <>
                   <input
-                className="border-[#9CA3AF] lg:ml-10 font-latolightone  ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
-                type="number"
-                placeholder=" Enter number to generate grid "
-                name="inputlength"
-                id="inputlength"
-                required
+                    className="border-[#9CA3AF] lg:ml-10 font-latolightone  ease-out duration-300 border-[1px] xs:w-[300px] sm:w-72 rounded-[4px] h-12 xs:mt-1 sm:mt-2 xs:ml-3 md:ml-[88px] sm:ml-7 pl-2"
+                    type="number"
+                    placeholder=" Enter number to generate grid "
+                    name="inputlength"
+                    id="inputlength"
+                    required
                     min="1"
                     max="200"
                   />
-                  <button 
-                className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 text-white font-normal bg-cyan-600"
-              >  Submit{" "}
+                  <button className="xs:w-[300px] md:mt-2 sm:w-24 md:w-32 ease-out duration-300 h-12 font-latoregularone xs:ml-3 xs:mt-2 sm:mt-2 sm:ml-1 md:ml-1 lg:ml-6 rounded-[4px] text-lg hello   hover:text-cyan-500 hover:border-[1px] hover:border-cyan-500 text-white font-normal bg-cyan-600">
+                    {" "}
+                    Submit{" "}
                   </button>
                 </>
               )}
